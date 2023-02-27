@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <button type="button" class="logout" id="logout">Logout</button>
+        <div id="username">
+          Hello username - Room
+        </div>
+        <hr />
+
+        <div id="chat_content"> 
+          <div class="messages" id="messages"> 
+          </div>
+        </div>
+      </div>
+
+      <input class="form-control" type="text" placeholder="Enter your message" id="message_input">
+      <footer>
+      </footer>
+    </div>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js" 
+    integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
